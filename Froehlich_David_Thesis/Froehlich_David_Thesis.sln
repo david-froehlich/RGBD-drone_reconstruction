@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OniFileTestReader", "OniFileTestReader\OniFileTestReader.vcxproj", "{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OniFileInfoReader", "OniFileInfoReader\OniFileInfoReader.vcxproj", "{EE37B403-748A-4791-9E86-2BF9D1A4098B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReconstructionFromOniFile", "ReconstructionFromOniFile\ReconstructionFromOniFile.vcxproj", "{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Debug|Win32.ActiveCfg = Debug|x64
+		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Debug|x64.ActiveCfg = Debug|x64
+		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Debug|x64.Build.0 = Debug|x64
+		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Release|Mixed Platforms.Build.0 = Release|x64
+		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Release|Win32.ActiveCfg = Release|x64
+		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Release|x64.ActiveCfg = Release|x64
+		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Release|x64.Build.0 = Release|x64
+		{EE37B403-748A-4791-9E86-2BF9D1A4098B}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{EE37B403-748A-4791-9E86-2BF9D1A4098B}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{EE37B403-748A-4791-9E86-2BF9D1A4098B}.Debug|Win32.ActiveCfg = Debug|x64
+		{EE37B403-748A-4791-9E86-2BF9D1A4098B}.Debug|x64.ActiveCfg = Debug|x64
+		{EE37B403-748A-4791-9E86-2BF9D1A4098B}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{EE37B403-748A-4791-9E86-2BF9D1A4098B}.Release|Mixed Platforms.Build.0 = Release|x64
+		{EE37B403-748A-4791-9E86-2BF9D1A4098B}.Release|Win32.ActiveCfg = Release|x64
+		{EE37B403-748A-4791-9E86-2BF9D1A4098B}.Release|x64.ActiveCfg = Release|x64
+		{EE37B403-748A-4791-9E86-2BF9D1A4098B}.Release|x64.Build.0 = Release|x64
+		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Debug|Win32.ActiveCfg = Debug|x64
+		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Debug|x64.ActiveCfg = Debug|x64
+		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Release|Mixed Platforms.Build.0 = Release|x64
+		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Release|Win32.ActiveCfg = Release|x64
+		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Release|x64.ActiveCfg = Release|x64
+		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
