@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OniFileInfoReader", "OniFil
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReconstructionFromOniFile", "ReconstructionFromOniFile\ReconstructionFromOniFile.vcxproj", "{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReconstructionFromCamera", "ReconstructionFromCamera\ReconstructionFromCamera.vcxproj", "{341EF90B-92CF-43FA-A9EF-60D3A8B3DA03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -23,7 +25,6 @@ Global
 		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Debug|Mixed Platforms.Build.0 = Debug|x64
 		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Debug|Win32.ActiveCfg = Debug|x64
 		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Debug|x64.ActiveCfg = Debug|x64
-		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Debug|x64.Build.0 = Debug|x64
 		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Release|Mixed Platforms.ActiveCfg = Release|x64
 		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Release|Mixed Platforms.Build.0 = Release|x64
 		{B06457D7-F5D3-45E8-8211-DF3D1E54D54C}.Release|Win32.ActiveCfg = Release|x64
@@ -42,11 +43,21 @@ Global
 		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Debug|Mixed Platforms.Build.0 = Debug|x64
 		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Debug|Win32.ActiveCfg = Debug|x64
 		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Debug|x64.ActiveCfg = Debug|x64
+		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Debug|x64.Build.0 = Debug|x64
 		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Release|Mixed Platforms.ActiveCfg = Release|x64
 		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Release|Mixed Platforms.Build.0 = Release|x64
 		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Release|Win32.ActiveCfg = Release|x64
 		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Release|x64.ActiveCfg = Release|x64
 		{2BA3A1FC-5042-4135-87B2-B554CCA9BC34}.Release|x64.Build.0 = Release|x64
+		{341EF90B-92CF-43FA-A9EF-60D3A8B3DA03}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{341EF90B-92CF-43FA-A9EF-60D3A8B3DA03}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{341EF90B-92CF-43FA-A9EF-60D3A8B3DA03}.Debug|Win32.ActiveCfg = Debug|x64
+		{341EF90B-92CF-43FA-A9EF-60D3A8B3DA03}.Debug|x64.ActiveCfg = Debug|x64
+		{341EF90B-92CF-43FA-A9EF-60D3A8B3DA03}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{341EF90B-92CF-43FA-A9EF-60D3A8B3DA03}.Release|Mixed Platforms.Build.0 = Release|x64
+		{341EF90B-92CF-43FA-A9EF-60D3A8B3DA03}.Release|Win32.ActiveCfg = Release|x64
+		{341EF90B-92CF-43FA-A9EF-60D3A8B3DA03}.Release|x64.ActiveCfg = Release|x64
+		{341EF90B-92CF-43FA-A9EF-60D3A8B3DA03}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

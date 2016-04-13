@@ -9,7 +9,7 @@
 #include <string>
 #include <iostream>
 
-#define MAX_FRAMES 500
+#define MAX_FRAMES 1000
 #define DEFAULT_ONI_FILE_PATH "C:\\Users\\Groundstation\\Desktop\\recording.oni"
 
 using namespace std;
@@ -20,7 +20,7 @@ int main(int argc, char* args[]) {
 	if (argc > 1) {
 		oni_file_path = args[1];
 	}
-
+	
 	cout << "Reading file " << oni_file_path << endl;
 
 	Device ni_dev;
@@ -195,6 +195,7 @@ int main(int argc, char* args[]) {
 	reme_sensor_close(c, s);
 	reme_sensor_destroy(c, &s);
 
+	//ni_dev.close();
 
 	// Create a new surface
 	reme_surface_t m;
@@ -215,7 +216,7 @@ int main(int argc, char* args[]) {
 	reme_options_set_real(c, o, "minimum_edge_length", 3);
 	reme_options_set_real(c, o, "maximum_edge_length", 20);
 	// Perform remeshing
-	reme_surface_remesh(c, m);
+	//reme_surface_remesh(c, m);
 
 	// Remeshing as decimation might change vertex positions,
 	// we should update the color information
