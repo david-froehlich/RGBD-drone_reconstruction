@@ -9,7 +9,7 @@
 #include <string>
 #include <iostream>
 
-#define MAX_FRAMES 1000
+#define MAX_FRAMES 5000
 #define DEFAULT_ONI_FILE_PATH "C:\\Users\\Groundstation\\Desktop\\recording.oni"
 
 using namespace std;
@@ -90,13 +90,13 @@ int main(int argc, char* args[]) {
 	// Use the tuning to derive a couple of related settings automatically.
 	reme_context_tune_reconstruction_options(c, REME_TUNE_PROFILE_LOW_QUALITY);
 
-	/*err = reme_options_set_int(c, o, "volume.minimum_corner.x", -500);
-	err = reme_options_set_int(c, o, "volume.minimum_corner.y", -500);
+	err = reme_options_set_int(c, o, "volume.minimum_corner.x", -800);
+	err = reme_options_set_int(c, o, "volume.minimum_corner.y", -800);
 	err = reme_options_set_int(c, o, "volume.minimum_corner.z", -3000);
 
-	err = reme_options_set_int(c, o, "volume.maximum_corner.x", 500);
-	err = reme_options_set_int(c, o, "volume.maximum_corner.y", 500);
-	err = reme_options_set_int(c, o, "volume.maximum_corner.z", 500);*/
+	err = reme_options_set_int(c, o, "volume.maximum_corner.x", 800);
+	err = reme_options_set_int(c, o, "volume.maximum_corner.y", 800);
+	err = reme_options_set_int(c, o, "volume.maximum_corner.z", 500);
 
 	reme_context_compile(c);
 

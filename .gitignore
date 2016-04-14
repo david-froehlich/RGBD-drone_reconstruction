@@ -1,5 +1,5 @@
 *.oni
-
+CMakeFiles/
 
 #################
 ## Eclipse
@@ -218,3 +218,5 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 *.ply
+Froehlich_David_Thesis/OniRecorder/Makefile
+Froehlich_David_Thesis/OniRecorder/cmake_install.cmake
