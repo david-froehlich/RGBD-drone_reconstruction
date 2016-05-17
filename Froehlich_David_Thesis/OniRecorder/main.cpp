@@ -10,11 +10,13 @@
 #include <string>
 #include <iostream>
 #include <ctime>
+#include <ctype.h>
+#include <stdlib.h>
 
 #define OUTPUT_DIRECTORY "/home/odroid/workspace/OniRecorder/tempfs"
 
-#define VIDEO_RESOLUTION_WIDTH 640 
-#define VIDEO_RESOLUTION_HEIGHT 480
+#define VIDEO_RESOLUTION_WIDTH 320
+#define VIDEO_RESOLUTION_HEIGHT 240
 
 #define VIDEO_FPS 30
 
@@ -44,13 +46,55 @@ string getDateTime() {
 
 string video_outfile_name = "recording_" + getDateTime() + ".oni";
 
-int main(int argc, char **argv) {
+int getargs(int argc, char **argv)
+{
+  int index;
+  int c;
+
+  opterr = 0;
+
+    while ((c = getopt (argc, argv, "d:")) != -1)
+    {
+        switch (c)
+        {
+        case 'd':
+            video_duration = atoi(optarg);
+            fprintf (stderr, "Video duration set to %d seconds\n", video_duration);
+            break;
+        case '?':
+            if (optopt == 'd')
+                fprintf (stderr, "Option -%d requires an argument.\n", optopt);
+            else if (isprint (optopt))
+                fprintf (stderr, "Unknown option `-%c'.\n", optopt);
+            else
+                fprintf (stderr, "Unknown option character `\\x%x'.\n",
+                   optopt);
+            return 1;
+      default:
+        abort ();
+       }
+   }
+
+  for (index = optind; index < argc; index++) {
+    printf ("Non-option argument %s\n", argv[index]);
+    return 1;
+  }
+  return 0;
+}
+
+int main(int argc, char **argv)
+{
+    if(getargs(argc, argv)) {
+        cout << "Invalid parameters..." << endl;
+        exit(1);
+    }
 
     if(chdir(OUTPUT_DIRECTORY)) {
         cout << "failed to change directory to " << OUTPUT_DIRECTORY << endl;
         getchar();
         exit(1);
     }
+
     openni::OpenNI::initialize();
 	int max_clocks_per_frame = MAX_TIMESTAMP_DIFFERENCE_MS * CLOCKS_PER_SEC / 1000;
 
@@ -108,9 +152,6 @@ int main(int argc, char **argv) {
 
 		cout << "stream-info depth: " << depth_video_mode.getResolutionX()
 			<< "x" << depth_video_mode.getResolutionY() << " at " << depth_video_mode.getFps() << " FPS" << endl;
-
-		cout << "Press enter to start recording...";
-		getchar();
 	}
 
     openni::VideoStream** streams = new openni::VideoStream*[2];
@@ -132,7 +173,7 @@ int main(int argc, char **argv) {
     }
 
 	//* 2 because each depth or rgb frame is counted individually
-    int required_frames = VIDEO_DEFAULT_DURATION * VIDEO_FPS * 2;	
+    int required_frames = video_duration * VIDEO_FPS * 2;
     clock_t begin_time = clock();
 
 	int captured_frames[] = { 0, 0 };
@@ -154,7 +195,7 @@ int main(int argc, char **argv) {
 		if (systime_between_frames > max_clocks_per_frame) {
 			uint64_t timestamp_difference = frame.getTimestamp() - last_timestamp[stream_index];
 			cout << "stream: " << stream_index << ", frame: " << captured_frames[stream_index] 
-				<< ", systime between frames: " << systime_between_frames << ", timestamp difference: " << timestamp_difference << endl;
+                << ", systime between frames: " << systime_between_frames << " microseconds, timestamp difference: " << timestamp_difference << " microseconds" <<endl;
 		}
 		if ((captured_frames[stream_index] % 50) == 0) {
 			cout << "captured frame number " << (captured_frames[stream_index]) << " from stream "
