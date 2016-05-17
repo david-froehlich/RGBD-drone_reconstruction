@@ -4,11 +4,14 @@
 // try to write an .oni file
 //
 
+#include <unistd.h>
 #include <stdio.h>
 #include <OpenNI.h>
 #include <string>
 #include <iostream>
 #include <ctime>
+
+#define OUTPUT_DIRECTORY "/home/odroid/workspace/OniRecorder/tempfs"
 
 #define VIDEO_RESOLUTION_WIDTH 640 
 #define VIDEO_RESOLUTION_HEIGHT 480
@@ -42,6 +45,12 @@ string getDateTime() {
 string video_outfile_name = "recording_" + getDateTime() + ".oni";
 
 int main(int argc, char **argv) {
+
+    if(chdir(OUTPUT_DIRECTORY)) {
+        cout << "failed to change directory to " << OUTPUT_DIRECTORY << endl;
+        getchar();
+        exit(1);
+    }
     openni::OpenNI::initialize();
 	int max_clocks_per_frame = MAX_TIMESTAMP_DIFFERENCE_MS * CLOCKS_PER_SEC / 1000;
 
