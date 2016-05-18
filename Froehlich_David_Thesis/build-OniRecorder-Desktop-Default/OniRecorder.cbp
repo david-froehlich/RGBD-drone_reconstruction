@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="OniRecorder" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OniRecorder">
+         <Option output="/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/OniRecorder" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/david/pixhawk_ws_wstool/devel/include" />
+            <Add directory="/opt/ros/indigo/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/openni2" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 OniRecorder" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="OniRecorder/fast">
+         <Option output="/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/OniRecorder" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/david/pixhawk_ws_wstool/devel/include" />
+            <Add directory="/opt/ros/indigo/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/openni2" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 OniRecorder/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/build-OniRecorder-Desktop-Default/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/OniRecorder/main.cpp">
+      </Unit>
+      <Unit filename="/home/david/Dropbox/uni/SS2015/BAK/RGBD-drone_reconstruction/Froehlich_David_Thesis/OniRecorder/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
