@@ -88,7 +88,7 @@ int main(int argc, char* args[]) {
 	err = reme_options_set_bool(c, o, "data_integration.use_colors", true);
 
 	// Use the tuning to derive a couple of related settings automatically.
-	reme_context_tune_reconstruction_options(c, REME_TUNE_PROFILE_LOW_QUALITY);
+	reme_context_tune_reconstruction_options(c, REME_TUNE_PROFILE_MID_QUALITY);
 
 	err = reme_options_set_int(c, o, "volume.minimum_corner.x", -800);
 	err = reme_options_set_int(c, o, "volume.minimum_corner.y", -800);
@@ -224,7 +224,11 @@ int main(int argc, char* args[]) {
 	err = reme_surface_inpaint_vertices(c, m);
 
 	// Save to file including colored vertices.
-	reme_surface_save_to_file(c, m, "test.ply");
+	string ply_filename = oni_file_path;
+	ply_filename += "_model.ply";
+	reme_surface_save_to_file(c, m, ply_filename.c_str());
+	cout << "Wrote model file " << ply_filename << endl;
+	
 	// Visualize resulting surface
 	reme_viewer_t viewer_surface;
 	reme_viewer_create_surface(c, m, "This is ReconstructMeSDK", &viewer_surface);
@@ -234,4 +238,5 @@ int main(int argc, char* args[]) {
 	reme_context_print_errors(c);
 	// Make sure to release all memory acquired
 	reme_context_destroy(&c);
+	getchar();
 }

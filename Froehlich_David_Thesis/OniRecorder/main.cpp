@@ -53,13 +53,17 @@ int getargs(int argc, char **argv)
 
   opterr = 0;
 
-    while ((c = getopt (argc, argv, "d:")) != -1)
+    while ((c = getopt (argc, argv, "f:d:")) != -1)
     {
         switch (c)
         {
+        case 'f':
+            video_outfile_name = optarg;
+            fprintf(stdout, "Output filename set to %s\n", video_outfile_name.c_str());
+            break;
         case 'd':
             video_duration = atoi(optarg);
-            fprintf (stderr, "Video duration set to %d seconds\n", video_duration);
+            fprintf (stdout, "Video duration set to %d seconds\n", video_duration);
             break;
         case '?':
             if (optopt == 'd')
