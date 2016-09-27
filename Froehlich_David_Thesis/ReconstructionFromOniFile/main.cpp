@@ -124,11 +124,13 @@ int main(int argc, char* args[]) {
 	reme_viewer_t viewer;
 	reme_viewer_create_image(c, "This is ReconstructMe SDK", &viewer);
 
-	reme_image_t images_to_show[2];
+	reme_image_t images_to_show[3];
 	reme_image_create(c, &images_to_show[0]);
 	reme_image_create(c, &images_to_show[1]);
+	reme_image_create(c, &images_to_show[2]);
 	reme_viewer_add_image(c, viewer, images_to_show[0]);
 	reme_viewer_add_image(c, viewer, images_to_show[1]);
+	reme_viewer_add_image(c, viewer, images_to_show[2]);
 
 
 	// Perform reconstruction while viewer is not closed.
@@ -176,7 +178,8 @@ int main(int argc, char* args[]) {
 			}
 			// Update the viewer
 			reme_sensor_get_image(c, s, REME_IMAGE_DEPTH, images_to_show[0]);
-			reme_sensor_get_image(c, s, REME_IMAGE_VOLUME, images_to_show[1]);
+			reme_sensor_get_image(c, s, REME_IMAGE_AUX, images_to_show[1]);
+			reme_sensor_get_image(c, s, REME_IMAGE_VOLUME, images_to_show[2]);
 			reme_viewer_update(c, viewer);
 			reme_viewer_is_closed(c, viewer, &viewer_done);
 		}
